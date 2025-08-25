@@ -4,24 +4,9 @@ const KEY = 'mercaplan.basket';
 function getBasket() { try { return JSON.parse(localStorage.getItem(KEY)) || [] } catch { return [] } }
 function setBasket(arr) { localStorage.setItem(KEY, JSON.stringify(arr)); }
 
-// En tu función addToBasket()
-function addToBasket(productId) {
-    // ... tu lógica para agregar el producto a la canasta ...
-
-    // Crea el mensaje de confirmación
-    const message = document.createElement('div');
-    message.className = 'added-to-basket';
-    message.textContent = 'Agregado a tu canasta';
-    
-    // Opcional: añade un ícono para hacerlo más atractivo
-    // message.innerHTML = `<i class="bi bi-check-circle-fill"></i> Agregado a tu canasta`;
-
-    document.body.appendChild(message);
-
-    // Oculta el mensaje después de unos segundos
-    setTimeout(() => {
-        message.remove();
-    }, 2000); // 2 segundos
+function addToBasket(id) {
+    const b = new Set(getBasket()); b.add(id); setBasket([...b]);
+    toast('Agregado a tu canasta');
 }
 
 function removeFromBasket(id, reload = false) {

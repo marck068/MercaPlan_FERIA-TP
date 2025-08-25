@@ -44,16 +44,16 @@
   {
     "product_id": "leche-entera-1l",
     "store_id": "lider",
-    "price_clp": 990,
+    "price_clp": 1290,
     "promo": null,
-    "url": "https://ejemplo/lider/leche"
+    "url": "https://www.lider.cl/supermercado/product/sku/5101/colun-leche-entera-natural-caja-1-l"
   },
   {
     "product_id": "leche-entera-1l",
     "store_id": "jumbo",
-    "price_clp": 1050,
+    "price_clp": 1350,
     "promo": null,
-    "url": "https://ejemplo/jumbo/leche"
+    "url": "https://www.jumbo.cl/leche-entera-colun-caja-1-l-natural/p"
   },
   {
     "product_id": "leche-entera-1l",

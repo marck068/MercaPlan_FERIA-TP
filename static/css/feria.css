@@ -1,7 +1,7 @@
 /* Paleta de colores unificada y más vibrante */
 :root {
     --primary-green: #5cb85c; /* Un verde más vivo y saturado */
-    --primary-green-light: #90d390;
+    --primary-green-light: #60d860;
     --secondary-green: #449d44; /* Un verde oscuro más profundo */
     --accent-lime: #ffeb3b; /* Amarillo brillante para un contraste fuerte */
     --text-dark: #2c3e50; /* Un gris-azulado muy oscuro */
@@ -54,7 +54,7 @@ body {
 
 /* Sección principal (HERO) */
 .hero {
-    background: linear-gradient(135deg, var(--bg-light) 0%, var(--primary-green) 100%);
+    background: linear-gradient(135deg, #044409 0%, var(--primary-green) 100%);
     background-size: 200% 200%;
     animation: gradientShift 15s ease-in-out infinite;
     padding: 8rem 0;
