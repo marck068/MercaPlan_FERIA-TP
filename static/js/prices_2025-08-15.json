@@ -1,0 +1,291 @@
+[
+  {
+    "product_id": "arroz-tucapel-1kg",
+    "store_id": "lider",
+    "price_clp": 1280,
+    "promo": null,
+    "url": "https://ejemplo/lider/arroz"
+  },
+  {
+    "product_id": "arroz-tucapel-1kg",
+    "store_id": "jumbo",
+    "price_clp": 1390,
+    "promo": {
+      "type": "percent",
+      "value": 10
+    },
+    "url": "https://ejemplo/jumbo/arroz"
+  },
+  {
+    "product_id": "arroz-tucapel-1kg",
+    "store_id": "tottus",
+    "price_clp": 1299,
+    "promo": null,
+    "url": "https://ejemplo/tottus/arroz"
+  },
+  {
+    "product_id": "arroz-tucapel-1kg",
+    "store_id": "unimarc",
+    "price_clp": 1350,
+    "promo": null,
+    "url": "https://ejemplo/unimarc/arroz"
+  },
+  {
+    "product_id": "arroz-tucapel-1kg",
+    "store_id": "santaisabel",
+    "price_clp": 1320,
+    "promo": {
+      "type": "xforY",
+      "x": 3,
+      "y": 2
+    },
+    "url": "https://ejemplo/si/arroz"
+  },
+  {
+    "product_id": "leche-entera-1l",
+    "store_id": "lider",
+    "price_clp": 990,
+    "promo": null,
+    "url": "https://ejemplo/lider/leche"
+  },
+  {
+    "product_id": "leche-entera-1l",
+    "store_id": "jumbo",
+    "price_clp": 1050,
+    "promo": null,
+    "url": "https://ejemplo/jumbo/leche"
+  },
+  {
+    "product_id": "leche-entera-1l",
+    "store_id": "tottus",
+    "price_clp": 999,
+    "promo": {
+      "type": "percent",
+      "value": 5
+    },
+    "url": "https://ejemplo/tottus/leche"
+  },
+  {
+    "product_id": "leche-entera-1l",
+    "store_id": "unimarc",
+    "price_clp": 1010,
+    "promo": null,
+    "url": "https://ejemplo/unimarc/leche"
+  },
+  {
+    "product_id": "leche-entera-1l",
+    "store_id": "santaisabel",
+    "price_clp": 995,
+    "promo": null,
+    "url": "https://ejemplo/si/leche"
+  },
+  {
+    "product_id": "detergente-3l",
+    "store_id": "lider",
+    "price_clp": 6990,
+    "promo": null,
+    "url": "https://ejemplo/lider/detergente"
+  },
+  {
+    "product_id": "detergente-3l",
+    "store_id": "jumbo",
+    "price_clp": 6790,
+    "promo": {
+      "type": "percent",
+      "value": 8
+    },
+    "url": "https://ejemplo/jumbo/detergente"
+  },
+  {
+    "product_id": "detergente-3l",
+    "store_id": "tottus",
+    "price_clp": 6890,
+    "promo": null,
+    "url": "https://ejemplo/tottus/detergente"
+  },
+  {
+    "product_id": "detergente-3l",
+    "store_id": "unimarc",
+    "price_clp": 7100,
+    "promo": null,
+    "url": "https://ejemplo/unimarc/detergente"
+  },
+  {
+    "product_id": "detergente-3l",
+    "store_id": "santaisabel",
+    "price_clp": 7050,
+    "promo": null,
+    "url": "https://ejemplo/si/detergente"
+  },
+
+
+
+  {
+    "product_id": "pinguinos-3000g",
+    "store_id": "lider",
+    "price_clp": 2800,
+    "promo": null,
+    "url": "https://ejemplo/lider/pinguinos"
+  },
+  {
+    "product_id": "pinguinos-3000g",
+    "store_id": "jumbo",
+    "price_clp": 3000,
+    "promo": { "type": "percent", "value": 10 },
+    "url": "https://ejemplo/jumbo/pinguinos"
+  },
+  {
+    "product_id": "pinguinos-3000g",
+    "store_id": "tottus",
+    "price_clp": 2900,
+    "promo": null,
+    "url": "https://ejemplo/tottus/pinguinos"
+  },
+  {
+    "product_id": "pinguinos-3000g",
+    "store_id": "unimarc",
+    "price_clp": 2950,
+    "promo": null,
+    "url": "https://ejemplo/unimarc/pinguinos"
+  },
+  {
+    "product_id": "manjarates-1200g",
+    "store_id": "lider",
+    "price_clp": 1150,
+    "promo": null,
+    "url": "https://ejemplo/lider/manjarates"
+  },
+  {
+    "product_id": "manjarates-1200g",
+    "store_id": "jumbo",
+    "price_clp": 1200,
+    "promo": { "type": "xforY", "x": 3, "y": 2 },
+    "url": "https://ejemplo/jumbo/manjarates"
+  },
+  {
+    "product_id": "yogur-100g",
+    "store_id": "lider",
+    "price_clp": 120,
+    "promo": null,
+    "url": "https://ejemplo/lider/yogur"
+  },
+  {
+    "product_id": "yogur-100g",
+    "store_id": "jumbo",
+    "price_clp": 100,
+    "promo": { "type": "percent", "value": 5 },
+    "url": "https://ejemplo/jumbo/yogur"
+  },
+  {
+    "product_id": "manzanas-100g",
+    "store_id": "lider",
+    "price_clp": 95,
+    "promo": null,
+    "url": "https://ejemplo/lider/manzanas"
+  },
+  {
+    "product_id": "manzanas-100g",
+    "store_id": "jumbo",
+    "price_clp": 100,
+    "promo": null,
+    "url": "https://ejemplo/jumbo/manzanas"
+  },
+  {
+    "product_id": "naranjas-100g",
+    "store_id": "lider",
+    "price_clp": 90,
+    "promo": null,
+    "url": "https://ejemplo/lider/naranjas"
+  },
+  {
+    "product_id": "naranjas-100g",
+    "store_id": "jumbo",
+    "price_clp": 100,
+    "promo": { "type": "percent", "value": 15 },
+    "url": "https://ejemplo/jumbo/naranjas"
+  },
+  {
+    "product_id": "carne-cerdo-500g",
+    "store_id": "lider",
+    "price_clp": 4500,
+    "promo": null,
+    "url": "https://ejemplo/lider/carne-cerdo"
+  },
+  {
+    "product_id": "carne-cerdo-500g",
+    "store_id": "jumbo",
+    "price_clp": 4800,
+    "promo": { "type": "percent", "value": 10 },
+    "url": "https://ejemplo/jumbo/carne-cerdo"
+  },
+  {
+    "product_id": "carne-cerdo-500g",
+    "store_id": "unimarc",
+    "price_clp": 4700,
+    "promo": null,
+    "url": "https://ejemplo/unimarc/carne-cerdo"
+  },
+  {
+    "product_id": "pan-100g",
+    "store_id": "lider",
+    "price_clp": 120,
+    "promo": null,
+    "url": "https://ejemplo/lider/pan"
+  },
+  {
+    "product_id": "pan-100g",
+    "store_id": "jumbo",
+    "price_clp": 110,
+    "promo": { "type": "xforY", "x": 3, "y": 2 },
+    "url": "https://ejemplo/jumbo/pan"
+  },
+  {
+    "product_id": "aspiradora-100g",
+    "store_id": "lider",
+    "price_clp": 59990,
+    "promo": null,
+    "url": "https://ejemplo/lider/aspiradora"
+  },
+  {
+    "product_id": "aspiradora-100g",
+    "store_id": "jumbo",
+    "price_clp": 58990,
+    "promo": { "type": "percent", "value": 5 },
+    "url": "https://ejemplo/jumbo/aspiradora"
+  },
+  {
+    "product_id": "refrigerador-7000g",
+    "store_id": "lider",
+    "price_clp": 329990,
+    "promo": null,
+    "url": "https://ejemplo/lider/refrigerador"
+  },
+  {
+    "product_id": "refrigerador-7000g",
+    "store_id": "jumbo",
+    "price_clp": 335000,
+    "promo": { "type": "percent", "value": 8 },
+    "url": "https://ejemplo/jumbo/refrigerador"
+  },
+  {
+    "product_id": "microondas-6000g",
+    "store_id": "lider",
+    "price_clp": 59990,
+    "promo": null,
+    "url": "https://ejemplo/lider/microondas"
+  },
+  {
+    "product_id": "microondas-6000g",
+    "store_id": "jumbo",
+    "price_clp": 57990,
+    "promo": null,
+    "url": "https://ejemplo/jumbo/microondas"
+  },
+  {
+    "product_id": "microondas-6000g",
+    "store_id": "unimarc",
+    "price_clp": 58990,
+    "promo": { "type": "percent", "value": 12 },
+    "url": "https://ejemplo/unimarc/microondas"
+  }
+]

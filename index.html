@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <title>MercaPlan — Comparador de precios</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Compara precios de mercadería en supermercados de Chile." />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <link href="./static/css/styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- NAV -->
+    <nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="feria.html">MercaPlan</a>
+            <div class="ms-auto d-flex gap-2">
+                <a class="btn btn-outline-primary" href="productos.html">Ver productos</a>
+                <a class="btn btn-outline-primary" href="canasta.html">Mi Canasta</a>
+                <a class="btn btn-outline-primary" href="login.html" id="btnLogin">Login</a>
+                <button class="btn btn-danger d-none" id="btnLogout">Cerrar sesión</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero-section py-5">
+        <div class="container text-center">
+            <h1 class="display-5 fw-semibold mb-2">Compara precios de supermercados en Chile</h1>
+            <p class="text-muted mb-4">Lider · Jumbo · Tottus · Unimarc · Santa Isabel</p>
+            <form class="row g-2 justify-content-center" onsubmit="goSearch(event)">
+                <div class="col-12 col-md-6">
+                    <input id="q" class="form-control form-control-lg" placeholder="Busca: arroz, leche, detergente…" />
+                </div>
+                <div class="col-auto">
+                    <button class="btn btn-lg btn-primary">Buscar</button>
+                </div>
+            </form>
+            <small class="text-muted d-block mt-3">Datos de demostración locales · Último snapshot: <span
+                    id="snapDate">—</span></small>
+        </div>
+    </header>
+
+    <!-- FEATURES -->
+    <section class="py-4">
+        <div class="container">
+            <div class="row g-3">
+                <div class="col-12 col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Búsqueda rápida</h5>
+                            <p class="card-text text-muted">Encuentra productos por nombre, marca o sinónimos.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Comparación clara</h5>
+                            <p class="card-text text-muted">Precio final y precio por unidad normalizado (kg / L /
+                                unidad).</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Tu canasta</h5>
+                            <p class="card-text text-muted">Arma una lista y ve el total por supermercado.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="static/js/navbar.js"></script>
+    <script src="static/js/login.js"></script>
+    <script src="./static/js/app.js"></script>
+    <script>
+        function goSearch(e) {
+            e.preventDefault();
+            const q = document.getElementById('q').value || '';
+            const url = new URL('./productos.html', location.href);
+            if (q.trim()) url.searchParams.set('q', q.trim());
+            location.href = url.toString();
+        }
+        // Mostrar fecha del snapshot cargado (si existe)
+        (async () => {
+            const date = await detectSnapshotDate();
+            if (date) document.getElementById('snapDate').textContent = date;
+        })();
+    </script>
+    <!-- Firebase App -->
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js"></script>
+
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+        import { getAuth, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+
+        // Configuración de Firebase
+        const firebaseConfig = {
+            apiKey: "AIzaSyDcsY5e7rLeLkTsf8TNnTfDizka7KmZqDQ",
+            authDomain: "hexalab-ab5ad.firebaseapp.com",
+            projectId: "hexalab-ab5ad",
+            storageBucket: "hexalab-ab5ad.firebasestorage.app",
+            messagingSenderId: "63589294275",
+            appId: "1:63589294275:web:73d3924ceede193f748276",
+            measurementId: "G-21ZT23XLVX"
+        };
+
+        // Inicializar Firebase
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+
+        // Referencias a los botones
+        const btnLogin = document.getElementById("btnLogin");
+        const btnLogout = document.getElementById("btnLogout");
+
+        // Detectar estado de autenticación
+        onAuthStateChanged(auth, (user) => {
+            if (user) {
+                // Usuario logueado → mostrar "Cerrar sesión"
+                btnLogin.classList.add("d-none");
+                btnLogout.classList.remove("d-none");
+            } else {
+                // Usuario deslogueado → mostrar "Login"
+                btnLogin.classList.remove("d-none");
+                btnLogout.classList.add("d-none");
+            }
+        });
+
+        // Evento cerrar sesión
+        btnLogout.addEventListener("click", () => {
+            signOut(auth).then(() => {
+                alert("👋 Sesión cerrada");
+            }).catch((error) => {
+                console.error("Error al cerrar sesión:", error);
+            });
+        });
+    </script>
+
+</body>
+
+</html>

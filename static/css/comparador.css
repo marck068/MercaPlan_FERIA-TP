@@ -1,0 +1,153 @@
+/* Paleta de colores unificada y moderna */
+:root {
+  --primary-green: #4CAF50;
+  --primary-green-light: #81C784;
+  --secondary-green: #388E3C;
+  --accent-lime: #CDDC39;
+  --text-dark: #333;
+  --text-light: #fff;
+  --bg-light: #f9f9f9;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+}
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+}
+
+/* --- */
+/* Navegación (NAV) */
+.navbar {
+  background-color: var(--primary-green) !important;
+  border-bottom: 3px solid var(--secondary-green) !important;
+  box-shadow: 0 4px 12px var(--shadow-color);
+  transition: background-color 0.3s ease;
+}
+
+.navbar-brand {
+  color: var(--text-light) !important;
+  font-size: 1.6rem;
+  font-weight: 700 !important;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar-brand:hover {
+  color: #e0e0e0 !important;
+  transform: scale(1.05);
+}
+
+.btn-primary {
+  background-color: var(--secondary-green) !important;
+  border-color: var(--secondary-green) !important;
+  font-weight: 600;
+  color: var(--text-light) !important;
+  transition: background-color 0.3s, transform 0.2s;
+  border-radius: 50px;
+}
+
+.btn-primary:hover {
+  background-color: #2e7132 !important;
+  border-color: #2e7132 !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-outline-primary {
+  color: var(--text-light) !important;
+  border-color: var(--text-light) !important;
+  font-weight: 600;
+  transition: background-color 0.3s, color 0.3s, transform 0.2s, border-color 0.3s;
+  border-radius: 50px;
+}
+
+.btn-outline-primary:hover, .btn-outline-primary:focus {
+  background-color: var(--secondary-green) !important;
+  color: var(--text-light) !important;
+  border-color: var(--secondary-green) !important;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(255, 255, 255, 0.2);
+}
+
+.btn-danger {
+  background-color: #e74c3c !important;
+  border-color: #e74c3c !important;
+  font-weight: 600;
+  color: var(--text-light) !important;
+  transition: background-color 0.3s, transform 0.2s;
+  border-radius: 50px;
+}
+
+.btn-danger:hover {
+  background-color: #c0392b !important;
+  border-color: #c0392b !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+/* --- */
+
+/* Estilos del encabezado del producto */
+#productHead {
+    padding: 1.5rem;
+    background-color: #fff;
+    border-radius: 1.5rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#productHead img {
+    border: 1px solid #ddd;
+    border-radius: 1rem;
+    object-fit: contain;
+}
+
+#productHead h5 {
+    color: var(--secondary-green);
+    font-weight: 700;
+}
+
+#productHead .badge {
+    background-color: var(--secondary-green) !important;
+    color: var(--text-light) !important;
+    font-weight: 500;
+}
+
+/* --- */
+
+/* Estilos de la tabla de comparación */
+.table-responsive {
+    border-radius: 1rem !important;
+    overflow: hidden;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+}
+
+.table {
+    border: none;
+}
+
+.table thead th {
+    border-bottom: 2px solid #ccc;
+    font-weight: 700;
+    color: var(--text-dark);
+}
+
+.table tbody tr {
+    transition: background-color 0.2s ease;
+}
+
+.table tbody tr:hover {
+    background-color: var(--bg-light);
+}
+
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+    background-color: #f0f4f0;
+}
+
+/* Estilo para las promociones */
+.promo-label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--secondary-green);
+}

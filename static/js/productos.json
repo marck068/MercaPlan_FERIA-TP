@@ -1,0 +1,221 @@
+[
+  {
+    "id": "arroz-tucapel-1kg",
+    "name": "Arroz Grado 1 1 kg",
+    "brand": "Tucapel",
+    "category": "Abarrotes",
+    "normalized": {
+      "size": 1000,
+      "unit": "g"
+    },
+    "image": "https://unimarc.vtexassets.com/arquivos/ids/217080/000000000000006126-UN-01.jpg?v=637608388729730000",
+    "synonyms": [
+      "arroz",
+      "tucapel",
+      "arroz 1kg"
+    ]
+  },
+
+  {
+    "id": "leche-entera-1l",
+    "name": "Leche entera 1 L",
+    "brand": "Colun",
+    "category": "Lácteos",
+    "normalized": {
+      "size": 1000,
+      "unit": "ml"
+    },
+    "image": "https://santaisabel.vtexassets.com/arquivos/ids/295371-900-900?width=900&height=900&aspect=true",
+    "synonyms": [
+      "leche",
+      "colun",
+      "leche caja"
+    ]
+  },
+
+  {
+    "id": "detergente-3l",
+    "name": "Detergente líquido 3 L",
+    "brand": "Omo",
+    "category": "Limpieza",
+    "normalized": {
+      "size": 3000,
+      "unit": "ml"
+    },
+    "image": "https://santaisabel.vtexassets.com/arquivos/ids/346579-900-900?width=900&height=900&aspect=true",
+    "synonyms": [
+      "detergente",
+      "omo",
+      "jabon ropa"
+    ]
+  },
+
+
+
+
+  {
+    "id": "pinguinos-3000g",
+    "name": "Pinguinos",
+    "brand": "",
+    "category": "comida",
+    "normalized": {
+      "size": 3000,
+      "unit": "g"
+    },
+    "image": "https://tiendaideal.vtexassets.com/arquivos/ids/156183-800-800?v=638490573324230000&width=800&height=800&aspect=true",
+    "synonyms": [
+      "pinguinos",
+      "snack",
+      "pastelito"
+    ]
+  },
+  {
+    "id": "manjarates-1200g",
+    "name": "Manjarates",
+    "brand": "",
+    "category": "comida",
+    "normalized": {
+      "size": 1200,
+      "unit": "g"
+    },
+    "image": "https://santaisabel.vtexassets.com/arquivos/ids/161853/Postre-Manjarate-80-g.jpg?v=637473588351900000",
+    "synonyms": [
+      "manjarate",
+      "postre",
+      "soprole"
+    ]
+  },
+  {
+    "id": "yogur-100g",
+    "name": "Yogur",
+    "brand": "Soprole",
+    "category": "comida",
+    "normalized": {
+      "size": 100,
+      "unit": "g"
+    },
+    "image": "https://santaisabel.vtexassets.com/arquivos/ids/487418/Yogurt-Soprole-Sin-Azucar-Frutilla-120-g.jpg?v=638791317066000000",
+    "synonyms": [
+      "yogurt",
+      "soprole",
+      "yogur frutilla"
+    ]
+  },
+  {
+    "id": "manzanas-100g",
+    "name": "Manzanas",
+    "brand": "",
+    "category": "comida",
+    "normalized": {
+      "size": 100,
+      "unit": "g"
+    },
+    "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTBsOMFxZridnSYcCrHRzM0oeOsQ2P3VPF6Im7Mg_GV1MvNch9eWm6ZTPDTSPhvz5cHneSn4WIhqfsM-3Tlgn_UGD85mXQErzD8KdHMVVQ",
+    "synonyms": [
+      "manzana",
+      "fruta",
+      "verde",
+      "roja"
+    ]
+  },
+  {
+    "id": "naranjas-100g",
+    "name": "Naranjas",
+    "brand": "",
+    "category": "comida",
+    "normalized": {
+      "size": 100,
+      "unit": "g"
+    },
+    "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcS0i_CLVJiMMy2PRIfgf-kdK2TJP3-Uv3fd7t-6ErNlKFT-AI1T2VOsmplEv40Owz4aHolzMn2lnVnmxqDtizOiLmosodct_t5BGDG29SpiYs59p8lHP-8_Hg",
+    "synonyms": [
+      "naranja",
+      "fruta",
+      "citrico"
+    ]
+  },
+
+
+  
+  {
+    "id": "carne-cerdo-500g",
+    "name": "Carne de cerdo",
+    "brand": "",
+    "category": "comida",
+    "normalized": {
+      "size": 500,
+      "unit": "g"
+    },
+    "image": "https://media.scoolinary.app/blog/images/2020/07/despiece-carne-de-cerdo.jpg",
+    "synonyms": [
+      "cerdo",
+      "carne",
+      "chancho",
+      "puerco"
+    ]
+  },
+  {
+    "id": "pan-100g",
+    "name": "Pan",
+    "brand": "",
+    "category": "comida",
+    "normalized": {
+      "size": 100,
+      "unit": "g"
+    },
+    "image": "https://www.paulinacocina.net/wp-content/uploads/2024/06/pan-marraqueta-paulina-cocina-recetas-800x450.jpg",
+    "synonyms": [
+      "marraqueta",
+      "pan",
+      "hallulla"
+    ]
+  },
+  {
+    "id": "aspiradora-100g",
+    "name": "Aspiradora",
+    "brand": "",
+    "category": "domestico",
+    "normalized": {
+      "size": 100,
+      "unit": "g"
+    },
+    "image": "https://www.dimarsa.cl/media/catalog/product/m/a/marcasthomasth-1640-rojo3jpeg_0_1636385992.jpg",
+    "synonyms": [
+      "aspiradora",
+      "limpieza",
+      "electrodomestico"
+    ]
+  },
+  {
+    "id": "refrigerador-7000g",
+    "name": "Refrigerador",
+    "brand": "Samsung",
+    "category": "domestico",
+    "normalized": {
+      "size": 7000,
+      "unit": "g"
+    },
+    "image": "https://newark.cl/storage/2021/12/Refrigerador-Samsung-rt43k6231-.jpeg",
+    "synonyms": [
+      "refrigerador",
+      "frigorifico",
+      "nevera"
+    ]
+  },
+  {
+    "id": "microondas-6000g",
+    "name": "Microondas",
+    "brand": "",
+    "category": "domestico",
+    "normalized": {
+      "size": 6000,
+      "unit": "g"
+    },
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Micro_linea.JPG",
+    "synonyms": [
+      "microondas",
+      "horno",
+      "electrodomestico"
+    ]
+  }
+]

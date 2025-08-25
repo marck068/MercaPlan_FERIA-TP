@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Registro - MercaPlan</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <link rel="stylesheet" href="static/css/registro.css">
+</head>
+
+<body>
+    <div class="card">
+        <h3 class="text-center mb-4 text-success">Crear Cuenta</h3>
+        <form id="registerForm">
+            <div class="mb-3">
+                <label for="newUsername" class="form-label">Usuario</label>
+                <input type="text" class="form-control" id="newUsername" required>
+            </div>
+            <div class="mb-3">
+                <label for="newEmail" class="form-label">Correo Electrónico</label>
+                <input type="email" class="form-control" id="newEmail" required>
+            </div>
+            <div class="mb-3">
+                <label for="newPassword" class="form-label">Contraseña</label>
+                <div class="input-group">
+                    <input type="password" class="form-control" id="newPassword" required>
+                    <!-- 👁 Botón que NO envía el formulario -->
+                    <button type="button" class="btn btn-outline-secondary" id="togglePassword">👁️</button>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-success w-100">Registrarse</button>
+        </form>
+
+        <!-- Enlace a login -->
+        <div class="text-center mt-3 login-link">
+            ¿Ya tienes cuenta? <a href="login.html">Inicia sesión</a>
+        </div>
+    </div>
+
+    <!-- Firebase App -->
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js"></script>
+    <!-- Firebase Auth -->
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js"></script>
+
+    <script type="module">
+        // Importar funciones desde los SDKs de Firebase
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+        import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+
+        // Configuración de Firebase
+        const firebaseConfig = {
+            apiKey: "AIzaSyDcsY5e7rLeLkTsf8TNnTfDizka7KmZqDQ",
+            authDomain: "hexalab-ab5ad.firebaseapp.com",
+            projectId: "hexalab-ab5ad",
+            storageBucket: "hexalab-ab5ad.firebasestorage.app",
+            messagingSenderId: "63589294275",
+            appId: "1:63589294275:web:73d3924ceede193f748276",
+            measurementId: "G-21ZT23XLVX"
+        };
+
+        // Inicializar Firebase
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+
+        // Evento de registro
+        document.getElementById('registerForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const email = document.getElementById('newEmail').value;
+            const password = document.getElementById('newPassword').value;
+
+            createUserWithEmailAndPassword(auth, email, password)
+                .then(userCredential => {
+                    alert("✅ Registro exitoso, ahora puedes iniciar sesión");
+                    window.location.href = "login.html"; // redirigir al login
+                })
+                .catch(error => {
+                    alert("❌ Error: " + error.message);
+                });
+        });
+    </script>
+
+    <!-- Mostrar/ocultar contraseña -->
+    <script>
+        const togglePassword = document.getElementById("togglePassword");
+        const passwordInput = document.getElementById("newPassword");
+
+        togglePassword.addEventListener("click", () => {
+            if (passwordInput.type === "password") {
+                passwordInput.type = "text";
+                togglePassword.textContent = "🙈";
+            } else {
+                passwordInput.type = "password";
+                togglePassword.textContent = "👁️";
+            }
+        });
+    </script>
+
+</body>
+
+</html>

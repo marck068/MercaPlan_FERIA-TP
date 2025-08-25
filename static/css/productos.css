@@ -1,0 +1,192 @@
+/* Paleta de colores unificada y moderna */
+:root {
+  --primary-green: #4CAF50;
+  --primary-green-light: #81C784;
+  --secondary-green: #388E3C;
+  --accent-lime: #CDDC39;
+  --text-dark: #333;
+  --text-light: #fff;
+  --bg-light: #f9f9f9;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+}
+
+/* --- */
+/* Navegación (NAV) */
+.navbar {
+  background-color: var(--primary-green) !important;
+  border-bottom: 3px solid var(--secondary-green) !important;
+  box-shadow: 0 4px 12px var(--shadow-color);
+  transition: background-color 0.3s ease;
+}
+
+.navbar-brand {
+  color: var(--text-light) !important;
+  font-size: 1.6rem;
+  font-weight: 700 !important;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar-brand:hover {
+  color: #e0e0e0 !important;
+  transform: scale(1.05);
+}
+
+.btn-primary {
+  background-color: var(--secondary-green) !important;
+  border-color: var(--secondary-green) !important;
+  font-weight: 600;
+  color: var(--text-light) !important;
+  transition: background-color 0.3s, transform 0.2s;
+  border-radius: 50px;
+}
+
+.btn-primary:hover {
+  background-color: #2e7132 !important;
+  border-color: #2e7132 !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-outline-primary {
+  color: var(--text-light) !important;
+  border-color: var(--text-light) !important;
+  font-weight: 600;
+  transition: background-color 0.3s, color 0.3s, transform 0.2s, border-color 0.3s;
+  border-radius: 50px;
+}
+
+.btn-outline-primary:hover, .btn-outline-primary:focus {
+  background-color: var(--secondary-green) !important;
+  color: var(--text-light) !important;
+  border-color: var(--secondary-green) !important;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(255, 255, 255, 0.2);
+}
+
+.btn-danger {
+  background-color: #e74c3c !important;
+  border-color: #e74c3c !important;
+  font-weight: 600;
+  color: var(--text-light) !important;
+  transition: background-color 0.3s, transform 0.2s;
+  border-radius: 50px;
+}
+
+.btn-danger:hover {
+  background-color: #c0392b !important;
+  border-color: #c0392b !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+/* --- */
+
+/* Filtros y Controles */
+.form-control, .form-select {
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    transition: all 0.3s ease;
+    box-shadow: none;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: var(--primary-green);
+    box-shadow: 0 0 0 0.25rem rgba(76, 175, 80, 0.25);
+}
+
+/* --- */
+
+/* Estilos de las tarjetas (productos) */
+.card {
+    border: none;
+    border-radius: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(76, 175, 80, 0.2);
+}
+
+.card-img-top {
+    border-bottom: 1px solid #eee;
+    background-color: #fcfcfc;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+}
+
+.card-title {
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--text-dark);
+}
+
+.card-text {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.badge {
+    background-color: var(--secondary-green) !important;
+    color: var(--text-light) !important;
+    font-weight: 500;
+    padding: 0.5em 0.8em;
+    border-radius: 50px;
+}
+
+.btn-outline-primary.btn-sm {
+    color: var(--primary-green) !important;
+    border-color: var(--primary-green) !important;
+    font-weight: 600;
+}
+
+.btn-outline-primary.btn-sm:hover {
+    background-color: var(--primary-green) !important;
+    color: var(--text-light) !important;
+}
+
+.btn-primary.btn-sm {
+    background-color: var(--primary-green) !important;
+    border-color: var(--primary-green) !important;
+}
+
+.btn-primary.btn-sm:hover {
+    background-color: var(--secondary-green) !important;
+}
+
+/* --- */
+
+/* Alertas */
+.alert-warning {
+    background-color: #fff3cd;
+    color: #664d03;
+    border-color: #ffecb5;
+    border-radius: 1rem;
+}
+/* Estilo del Toast de confirmación */
+.toast-container {
+    z-index: 1080; /* Asegura que el toast esté por encima de todos los elementos */
+}
+
+.toast {
+    border-radius: 1rem;
+    background-color: var(--primary-green) !important;
+    color: var(--text-light) !important;
+    border: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.toast-body {
+    font-weight: 500;
+}
